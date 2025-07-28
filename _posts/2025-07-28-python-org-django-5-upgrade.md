@@ -70,7 +70,7 @@ This is where having a robust test suite and monitoring eases your nerves 😅.
 
 ## Lessons Learned
 
-1. **Comprehensive Testing is mportant**: Our extensive test suite caught numerous edge cases before they reached production.
+1. **Comprehensive Testing is important**: Our extensive test suite caught numerous edge cases before they reached production.
 
 2. **Community Packages Matter**: Ensure third-party package compatibility early, because we rely on many!
 
