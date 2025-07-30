@@ -10,18 +10,18 @@ redirect_from:
 
 Resume in PDF Format: [Resume.pdf](/files/resume.pdf)
 
-Experience
-==========
+Work experience
+===============
 
-* Infrastructure Engineer | July 2024 - Present @ *Python Software Foundation* (Remote)
+* Infrastructure Engineer, Python Software Foundation, 2024 - Present
 
-* Senior Linux Systems Administrator | Feb 2022 – July 2024 @ *O'Reilly Auto Parts* (Remote)
+* Senior Linux Systems Administrator, O'Reilly Auto Parts, 2022 - 2024
   - Managed petabyte-scale storage systems and computational infrastructure, ensuring seamless operations
   - Enhanced system reliability and efficiency through maintenance of distributed systems using Ansible and Terraform
   - Supported Ubuntu/RHEL servers with VMware, Containers, and IaC, optimizing server performance
   - Introduced code reviews, pull requests, code formatting, linting, and testing to users
 
-* IT Specialist | Mar 2018 – Feb 2022 @ *Labcorp* (Remote)
+* IT Specialist, Labcorp, 2018 - 2022
   - Automated routine tasks with Python, Powershell, and Ansible, reducing downtime and increasing efficiency
   - Instituted new Active Directory GPO structure to facilitate automation
   - Managed networks using Cisco ISE, Infoblox IPAM, Velocloud Orchestrator, and Meraki dashboard
@@ -60,15 +60,15 @@ Open Source
   - Split off popular internals from the Litestar organization projects to provide them en masse
   - Maintained projects including a [SQLAlchemy companion library](https://github.com/jolt-org/advanced-alchemy), Python runtime type introspection utility library, and more
 
-Technical Skills
-================
+Skills
+======
 
-* **Languages:** Python, Bash, Java, Powershell
-* **Frameworks:** Litestar, Django, Flask, FastAPI, Jinja2, OAuth, PostgreSQL, TailwindCSS, Bootstrap, SQLAlchemy
-* **Tools:** Git, Docker, LXD/LXC, NGINX, Ansible, Azure, Prometheus, Grafana, Zabbix, OpenTelemetry
-* **Operating Systems:** Windows Server (2012-2022), Ubuntu Server, Red Hat Server (RHEL/CentOS/Rocky Linux)
-* **Software:** VMWare vSphere, ESXi, Proxmox, Hyper-V, GPO, ServiceNow, SCCM, Citrix
-* **Currently Learning:** Kubernetes, Rancher (Harvester, k3s), Jenkins, Terraform, Rust
+Languages: Python, Bash, Java, Powershell, Typescript, SQL
+Frameworks: Litestar, Django, Flask, FastAPI, Jinja2, OAuth, PostgreSQL, TailwindCSS, Bootstrap, SQLAlchemy
+Tools: Git, Docker, LXD/LXC, NGINX, Ansible, Azure, Prometheus, Grafana, Zabbix, OpenTelemetry
+Operating Systems: Windows Server (2012-2022), Ubuntu Server, Red Hat Server (RHEL/CentOS/Rocky Linux)
+Software: VMWare vSphere, ESXi, Proxmox, Hyper-V, GPO, ServiceNow, SCCM, Citrix
+Currently Learning: Kubernetes, Rancher (Harvester, k3s), Jenkins, Terraform, Rust
 
 Talks
 =====

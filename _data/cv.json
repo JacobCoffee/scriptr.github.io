@@ -30,9 +30,126 @@
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Python Software Foundation",
+      "position": "Infrastructure Engineer",
+      "website": "",
+      "startDate": "2024",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "O'Reilly Auto Parts",
+      "position": "Senior Linux Systems Administrator",
+      "website": "",
+      "startDate": "2022",
+      "endDate": "2024",
+      "summary": "",
+      "highlights": [
+        "Managed petabyte-scale storage systems and computational infrastructure, ensuring seamless operations",
+        "Enhanced system reliability and efficiency through maintenance of distributed systems using Ansible and Terraform",
+        "Supported Ubuntu/RHEL servers with VMware, Containers, and IaC, optimizing server performance",
+        "Introduced code reviews, pull requests, code formatting, linting, and testing to users"
+      ]
+    },
+    {
+      "company": "Labcorp",
+      "position": "IT Specialist",
+      "website": "",
+      "startDate": "2018",
+      "endDate": "2022",
+      "summary": "",
+      "highlights": [
+        "Automated routine tasks with Python, Powershell, and Ansible, reducing downtime and increasing efficiency",
+        "Instituted new Active Directory GPO structure to facilitate automation",
+        "Managed networks using Cisco ISE, Infoblox IPAM, Velocloud Orchestrator, and Meraki dashboard"
+      ]
+    }
+  ],
   "education": [],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Languages",
+      "level": "",
+      "keywords": [
+        "Python",
+        "Bash",
+        "Java",
+        "Powershell",
+        "Typescript",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "level": "",
+      "keywords": [
+        "Litestar",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "Jinja2",
+        "OAuth",
+        "PostgreSQL",
+        "TailwindCSS",
+        "Bootstrap",
+        "SQLAlchemy"
+      ]
+    },
+    {
+      "name": "Tools",
+      "level": "",
+      "keywords": [
+        "Git",
+        "Docker",
+        "LXD/LXC",
+        "NGINX",
+        "Ansible",
+        "Azure",
+        "Prometheus",
+        "Grafana",
+        "Zabbix",
+        "OpenTelemetry"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "level": "",
+      "keywords": [
+        "Windows Server (2012-2022)",
+        "Ubuntu Server",
+        "Red Hat Server (RHEL/CentOS/Rocky Linux)"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "",
+      "keywords": [
+        "VMWare vSphere",
+        "ESXi",
+        "Proxmox",
+        "Hyper-V",
+        "GPO",
+        "ServiceNow",
+        "SCCM",
+        "Citrix"
+      ]
+    },
+    {
+      "name": "Currently Learning",
+      "level": "",
+      "keywords": [
+        "Kubernetes",
+        "Rancher (Harvester",
+        "k3s)",
+        "Jenkins",
+        "Terraform",
+        "Rust"
+      ]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
