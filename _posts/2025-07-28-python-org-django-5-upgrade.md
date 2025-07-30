@@ -2,7 +2,7 @@
 title: 'Upgrading Python.org: From Django 4.2 to 5.2'
 date: 2025-07-28
 header:
-  teaser: "unsplash-gallery-image-2-th.jpg"
+  teaser: https://images.unsplash.com/photo-1690683790356-c1edb75e3df7?q=80&w=3609&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 permalink: /posts/2025/07/python-org-django-5-upgrade/
 tags:
   - django

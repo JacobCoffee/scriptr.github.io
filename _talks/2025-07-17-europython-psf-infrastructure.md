@@ -4,6 +4,9 @@ collection: talks
 type: "Conference Talk"
 permalink: /talks/2025-07-17-europython-psf-infrastructure
 venue: "EuroPython 2025"
+header:
+  overlay_image: https://ep2025.europython.eu/_astro/conference_photo._DlXIQqf_KsJcL.avif
+  overlay_filter: 0.5
 date: 2025-07-17
 location: "Prague, Czech Republic"
 talk_type: "Conference Talk"

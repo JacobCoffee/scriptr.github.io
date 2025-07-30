@@ -3,6 +3,9 @@ title: "Litestar: Effortlessly Build Performant APIs"
 collection: talks
 type: "Podcast"
 permalink: /talks/2023-08-30-talk-python-litestar
+header:
+  overlay_image: https://cdn-podcast.talkpython.fm/static/img/footer_v3-80pc.jpg
+  overlay_filter: 0.5
 venue: "Talk Python To Me"
 date: 2023-08-30
 location: "Online"

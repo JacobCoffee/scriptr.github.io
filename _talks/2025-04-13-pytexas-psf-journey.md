@@ -4,6 +4,9 @@ collection: talks
 type: "Conference Talk"
 permalink: /talks/2025-04-13-pytexas-psf-journey
 venue: "PyTexas 2025"
+header:
+  overlay_image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-UOJAGcjpBvMkpuSTsoIJiYVi4xqOorm2w&s
+  overlay_filter: 0.5
 date: 2025-04-13
 location: "Austin, Texas"
 talk_type: "Conference Talk"

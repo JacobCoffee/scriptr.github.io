@@ -4,6 +4,9 @@ collection: talks
 type: "Conference Talk"
 permalink: /talks/2025-05-18-pycon-us-psf-infrastructure
 venue: "PyCon US 2025"
+header:
+  overlay_image: https://images.pixieset.com/29529239/d9b6ac85286a1517630f70c35c661f17-xxlarge.jpg
+  overlay_filter: 0.5
 date: 2025-05-18
 location: "Pittsburgh, Pennsylvania"
 talk_type: "Conference Talk"
