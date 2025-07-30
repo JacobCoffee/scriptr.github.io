@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Generate table of contents
   const tocContainer = document.getElementById('markdown-toc');
   const headings = document.querySelectorAll('.page__content h2, .page__content h3, .page__content h4');
+  const tocDetails = document.getElementById('toc-details');
+  
+  // Set initial state based on screen width
+  if (tocDetails && window.innerWidth < 1200) {
+    tocDetails.removeAttribute('open');
+  }
   
   if (headings.length > 0 && tocContainer) {
     headings.forEach(function(heading, index) {
@@ -63,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   } else {
     // Hide TOC if no headings
-    const tocDetails = document.getElementById('toc-details');
     if (tocDetails) {
       tocDetails.style.display = 'none';
     }

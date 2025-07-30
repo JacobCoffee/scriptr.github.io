@@ -3,7 +3,11 @@
    ========================================================================== */
 
 .sidebar__right {
-  @include breakpoint($large) {
+  display: none;
+  
+  // Only show TOC when there's enough space to avoid overlap
+  @include breakpoint(1600px) {
+    display: block;
     position: fixed;
     top: calc(#{$masthead-height} + 1em);
     right: 2em;
@@ -12,10 +16,9 @@
     max-height: calc(100vh - #{$masthead-height} - 3em);
     overflow-y: auto;
   }
-
-  @include breakpoint($x-large) {
+  
+  @include breakpoint(1800px) {
     width: $right-sidebar-width;
-    right: 4em;
   }
   
   // Ensure proper scrolling
@@ -112,9 +115,3 @@ details#toc-details {
   }
 }
 
-// Hide on small screens
-@include breakpoint(max-width $large) {
-  .sidebar__right {
-    display: none;
-  }
-}
