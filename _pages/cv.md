@@ -92,10 +92,8 @@ Education
 
 [//]: # (* IEEE & ACM Student Member)
 
-====
 
 Talks
-
 =====
 
 [//]: # ()
