@@ -40,7 +40,12 @@ layout: default
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}    
+        {% endif %}
+        
+        {% comment %}<!-- Inline TOC - only show if page.toc is not false -->{% endcomment %}
+        {% unless page.toc == false %}
+          {% include toc-inline.html %}
+        {% endunless %}
         </header>
       {% endunless %}
 
@@ -92,6 +97,7 @@ layout: default
       {% include comments.html %}
     {% endif %}
   </article>
+
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}

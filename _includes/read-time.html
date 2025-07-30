@@ -12,6 +12,7 @@
 	{% else %}
 	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
 	{% endif %}
+  • {{ words | number_with_delimiter }} words
 {% else %}
   {{ site.data.ui-text[site.locale].undefined_wpm | "Undefined parameter words_per_minute at _config.yml" }}
 {% endif %}
