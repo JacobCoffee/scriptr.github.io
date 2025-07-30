@@ -1,22 +1,22 @@
 var addressPoints = [
   [
-    "Berkeley CA, USA",
-    37.8708393,
-    -122.2728638
+    "Behind the Scenes: PSF Infrastructure and How You Can Contribute<br />EuroPython 2025; Prague, Czech Republic",
+    50.0874654,
+    14.4212535
   ],
   [
-    "London, UK",
-    51.5073219,
-    -0.1276473
+    "One Year In: Insights and Inspiration from my PSF Journey - Part Two<br />PyCon US 2025; Pittsburgh, Pennsylvania",
+    40.4416941,
+    -79.9900861
   ],
   [
-    "San Francisco, California",
-    37.7792808,
-    -122.4192362
+    "One Year In: Insights and Inspiration from My PSF Journey<br />PyTexas 2025; Austin, Texas",
+    30.2711286,
+    -97.7436995
   ],
   [
-    "Los Angeles, CA",
-    34.0543942,
-    -118.2439408
+    "Litestar: Effortlessly Build Performant APIs<br />Talk Python To Me; Online",
+    43.5904719,
+    3.8595132
   ]
 ];
