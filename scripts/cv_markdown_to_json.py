@@ -378,12 +378,14 @@ def parse_portfolio_from_cv(portfolio_text, opensource_text):
             
             # Parse project name and description from first line
             first_line = lines[0].strip()
-            # Format: Project Name | Short description | Date
-            parts = first_line.split('|')
-            if len(parts) >= 2:
-                name = parts[0].strip()
-                description = parts[1].strip()
-                date = parts[2].strip() if len(parts) > 2 else ""
+            # New format: Project Name - Description, YYYY - YYYY
+            match = re.match(r'(.*?)\s*-\s*(.*?),\s*(\d{4})\s*-\s*(\d{4}|Present)', first_line, re.IGNORECASE)
+            if match:
+                name = match.group(1).strip()
+                description = match.group(2).strip()
+                start_date = match.group(3)
+                end_date = match.group(4)
+                date = f"{start_date} - {end_date}"
                 
                 # Extract details from bullet points
                 details = []
@@ -409,38 +411,45 @@ def parse_portfolio_from_cv(portfolio_text, opensource_text):
             
             # Parse first line
             first_line = lines[0].strip()
+            
+            # Check for format: Position, [Project](url) - Description, YYYY - Present
+            # or: Position, Organization - Description, YYYY - Present
+            url = ""
+            
             # Extract URL if present
             url_match = re.search(r'\[(.*?)\]\((.*?)\)', first_line)
             if url_match:
-                name = url_match.group(1)
+                # Replace URL with just the project name for parsing
+                project_name = url_match.group(1)
                 url = url_match.group(2)
-                # Get the rest of the line after the URL
-                rest = first_line[url_match.end():].strip()
-            else:
-                # No URL found, parse normally
-                parts = first_line.split('|')
-                name = parts[0].strip()
-                rest = '|'.join(parts[1:]) if len(parts) > 1 else ""
-                url = ""
+                first_line = first_line[:url_match.start()] + project_name + first_line[url_match.end():]
             
-            # Extract description and date
-            parts = rest.split('|')
-            description = parts[0].strip() if parts else ""
-            date = parts[1].strip() if len(parts) > 1 else ""
-            
-            # Extract details from bullet points
-            details = []
-            for line in lines[1:]:
-                if line.strip().startswith('-'):
-                    details.append(line.strip()[1:].strip())
-            
-            portfolio_entries.append({
-                "name": name,
-                "category": "opensource",
-                "date": date,
-                "url": url,
-                "description": description + ". " + " ".join(details) if details else description
-            })
+            # Parse the line: Position, Organization - Description, YYYY - YYYY
+            match = re.match(r'(.*?),\s*(.*?)\s*-\s*(.*?),\s*(\d{4})\s*-\s*(\w+)', first_line)
+            if match:
+                position = match.group(1).strip()
+                org = match.group(2).strip()
+                description = match.group(3).strip()
+                start_date = match.group(4)
+                end_date = match.group(5)
+                
+                name = f"{org}"
+                full_description = f"{position} - {description}"
+                date = f"{start_date} - {end_date}"
+                
+                # Extract details from bullet points
+                details = []
+                for line in lines[1:]:
+                    if line.strip().startswith('-'):
+                        details.append(line.strip()[1:].strip())
+                
+                portfolio_entries.append({
+                    "name": name,
+                    "category": "opensource",
+                    "date": date,
+                    "url": url,
+                    "description": full_description + ". " + " ".join(details) if details else full_description
+                })
     
     return portfolio_entries
 
