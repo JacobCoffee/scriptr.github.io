@@ -10,8 +10,6 @@ redirect_from:
 
 Resume in PDF Format: [Resume.pdf](/files/resume.pdf)
 
-[//]: # (TODO: Update PDF)
-
 Experience
 ==========
 
@@ -50,18 +48,17 @@ Open Source
 ===========
 
 * [Litestar](https://github.com/litestar-org/) | Maintainer - Asynchronous Python Framework for building APIs and Web Apps | 2023 – Present
-  * Contribute to the codebase for Litestar, ensuring its performance and capabilities
-  * Managed complex CI pipelines, including testing, linting, and deployment
-  * Collaborate on project roadmap and features, and maintain related projects like Polyfactory
-  * Provide assistance and guidance within the project’s community
-  * Steered Litestar organization projects, roadmap, and vision
-  * Maintained priorities and relationships with user and business sponsors
-  * Managed the project’s community, including contributors, users, and sponsors
+  - Contribute to the codebase for Litestar, ensuring its performance and capabilities
+  - Managed complex CI pipelines, including testing, linting, and deployment
+  - Collaborate on project roadmap and features, and maintain related projects like Polyfactory
+  - Provide assistance and guidance within the project's community
+  - Steered Litestar organization projects, roadmap, and vision
+  - Maintained priorities and relationships with user and business sponsors
+  - Managed the project's community, including contributors, users, and sponsors
 
 * Maintainer | Powerful utilities for Python - 2023 - Present @ Jolt Organization
-  * Split off popular internals from the Litestar organization projects to provide them en masse.
-  * Maintained projects including a [SQLAlchemy companion library](https://github.com/jolt-org/advanced-alchemy), 
-    Python runtime type introspection utility library, and more.
+  - Split off popular internals from the Litestar organization projects to provide them en masse
+  - Maintained projects including a [SQLAlchemy companion library](https://github.com/jolt-org/advanced-alchemy), Python runtime type introspection utility library, and more
 
 Technical Skills
 ================
@@ -73,30 +70,9 @@ Technical Skills
 * **Software:** VMWare vSphere, ESXi, Proxmox, Hyper-V, GPO, ServiceNow, SCCM, Citrix
 * **Currently Learning:** Kubernetes, Rancher (Harvester, k3s), Jenkins, Terraform, Rust
 
-Education
-=========
-
-* Bachelor of Computer Science, Auburn University, 2026 (expected)
-* Associate of Science in Computer Science & Programming, Wallace State Community College, 2023 (expected)
-
-[//]: # (Service and leadership)
-
-[//]: # (======================)
-
-[//]: # ()
-[//]: # (* Auburn Student ACM Club)
-
-[//]: # (* Auburn Ethical Hacking Club)
-
-[//]: # (* Auburn AI/Machine Learning Group)
-
-[//]: # (* IEEE & ACM Student Member)
-
-
 Talks
 =====
 
-[//]: # ()
 <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+{% endfor %}</ul>
