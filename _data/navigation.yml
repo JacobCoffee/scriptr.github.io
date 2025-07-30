@@ -5,7 +5,7 @@ main:
     url: /
 
   - title: "Talks"
-   url: /talks/
+    url: /talks/
 
   - title: "Posts"
     url: /blog/
