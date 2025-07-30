@@ -173,7 +173,7 @@
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">
-            {% if talk.url %}
+            {% if talk.url and talk.url != "" %}
             <a href="{{ talk.url }}">{{ talk.name }}</a>
             {% else %}
             {{ talk.name }}
