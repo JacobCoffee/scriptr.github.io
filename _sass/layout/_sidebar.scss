@@ -24,6 +24,18 @@
     padding-top: $masthead-height;
   }
 
+  // Special positioning for talk pages with hero images
+  .layout--talk & {
+    @media screen and (min-width: $sidebar-screen-min-width) {
+      position: sticky !important;
+      top: $masthead-height;
+      height: auto !important;  // Allow natural height
+      align-self: start;
+      padding-top: 0 !important;  // Override inline styles
+      overflow-y: visible !important;  // Don't force scroll
+    }
+  }
+
   @include breakpoint($large) {
     @include span(2 of 12);
     opacity: 1;
@@ -33,11 +45,23 @@
     &:hover {
       opacity: 1;
     }
+    
+    // For talk pages using grid, don't constrain width
+    .layout--talk & {
+      width: 100%;
+      margin: 0;
+      float: none;
+    }
   }
 
   @include breakpoint($x-large) {
     max-width: $sidebar-link-max-width;
     padding-right: 0;
+    
+    // Don't constrain width on talk pages
+    .layout--talk & {
+      max-width: none;
+    }
   }
 
   h2, h3, h4, h5, h6 {

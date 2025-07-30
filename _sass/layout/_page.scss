@@ -14,6 +14,16 @@
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
+
+  // For talk pages, ensure grid layout for proper sidebar positioning
+  .layout--talk & {
+    @include breakpoint($large) {
+      display: grid;
+      grid-template-columns: 2fr 10fr;
+      gap: 2em;
+      align-items: start;
+    }
+  }
 }
 
 .page {
@@ -21,6 +31,15 @@
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(2 of 12);
+  }
+
+  // For talk pages with grid layout, reset the span/prefix/suffix
+  .layout--talk & {
+    @include breakpoint($large) {
+      width: 100%;
+      margin: 0;
+      float: none;
+    }
   }
 
   .page__inner-wrap {
