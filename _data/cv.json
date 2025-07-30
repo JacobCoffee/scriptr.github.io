@@ -24,9 +24,14 @@
         "url": "https://www.linkedin.com/in/JacobCoffee"
       },
       {
-        "network": "Twitter",
+        "network": "X",
         "username": "Scriptr",
-        "url": "https://twitter.com/Scriptr"
+        "url": "https://x.com/Scriptr"
+      },
+      {
+        "network": "Bluesky",
+        "username": "monorepo.bsky.social",
+        "url": "https://bsky.app/profile/monorepo.bsky.social"
       }
     ]
   },

@@ -149,9 +149,16 @@ def extract_author_info(config):
         
         if author.get('twitter'):
             profiles.append({
-                "network": "Twitter",
+                "network": "X",
                 "username": author.get('twitter'),
-                "url": f"https://twitter.com/{author.get('twitter')}"
+                "url": f"https://x.com/{author.get('twitter')}"
+            })
+        
+        if author.get('bluesky'):
+            profiles.append({
+                "network": "Bluesky",
+                "username": author.get('bluesky'),
+                "url": f"https://bsky.app/profile/{author.get('bluesky')}"
             })
         
         author_info['profiles'] = profiles
