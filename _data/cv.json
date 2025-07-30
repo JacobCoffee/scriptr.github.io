@@ -102,6 +102,8 @@
       "name": "Tools",
       "level": "",
       "keywords": [
+        "Kubernetes",
+        "Terraform",
         "Git",
         "Docker",
         "LXD/LXC",
@@ -141,11 +143,9 @@
       "name": "Currently Learning",
       "level": "",
       "keywords": [
-        "Kubernetes",
         "Rancher (Harvester",
         "k3s)",
         "Jenkins",
-        "Terraform",
         "Rust"
       ]
     }
