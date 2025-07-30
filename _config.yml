@@ -92,7 +92,7 @@ author:
   location         : "Birmingham, AL"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    :
   email            : "jacob@scriptr.dev"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -110,7 +110,7 @@ author:
   lastfm           :
   linkedin         : "JacobCoffee"
   bluesky          : "monorepo.bsky.social"
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : "https://stackexchange.com/users/21126944/j-coffee" # http://stackoverflow.com/users/123456/username
