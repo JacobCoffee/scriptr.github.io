@@ -65,10 +65,10 @@ Skills
 
 Languages: Python, Bash, Java, Powershell, Typescript, SQL
 Frameworks: Litestar, Django, Flask, FastAPI, Jinja2, OAuth, PostgreSQL, TailwindCSS, Bootstrap, SQLAlchemy
-Tools: Git, Docker, LXD/LXC, NGINX, Ansible, Azure, Prometheus, Grafana, Zabbix, OpenTelemetry
+Tools: Kubernetes, Terraform, Git, Docker, LXD/LXC, NGINX, Ansible, Azure, Prometheus, Grafana, Zabbix, OpenTelemetry
 Operating Systems: Windows Server (2012-2022), Ubuntu Server, Red Hat Server (RHEL/CentOS/Rocky Linux)
 Software: VMWare vSphere, ESXi, Proxmox, Hyper-V, GPO, ServiceNow, SCCM, Citrix
-Currently Learning: Kubernetes, Rancher (Harvester, k3s), Jenkins, Terraform, Rust
+Currently Learning: Rancher (Harvester, k3s), Jenkins, Rust
 
 Talks
 =====
