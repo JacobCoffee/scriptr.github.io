@@ -29,17 +29,17 @@ Work experience
 Projects
 ========
 
-* Internal Apps | Highly-available APIs for 1000+ users | 2022 – Present
+* Internal Apps - Highly-available APIs for 1000+ users, 2022 - Present
   - Architected and deployed a highly available internal store API and corresponding frontend
   - Developed ChatOps interfaces and automation to reduce user friction
   - Deployed load balancing and versioned multi-container deployments for application resiliency
 
-* Homelab | vSphere, Active Directory, Linux, Docker, Azure | May 2018 – Present
+* Homelab - vSphere, Active Directory, Linux, Docker, Azure, 2018 - Present
   - Engineered systems around hardware constraints in an 8 node cluster
   - Implemented Docker containerization with source-controlled configuration deployed with GitOps
   - Built complex networks with VLANs for service segmentation, multi-user VPN, and IDS/IPS services
 
-* Order Management System | Web app for pathologists' test ordering | Jan 2022 – Feb 2022
+* Order Management System - Web app for pathologists' test ordering, 2022 - 2022
   - Deployed a multi-environment Flask web app with Docker, LDAP, OAuth authentication, and tiered permissions
   - Engineered scalable deployment with NGINX, Gunicorn, and Docker
   - Developing a reporting dashboard for national teams
@@ -47,7 +47,7 @@ Projects
 Open Source
 ===========
 
-* [Litestar](https://github.com/litestar-org/) | Maintainer - Asynchronous Python Framework for building APIs and Web Apps | 2023 – Present
+* Maintainer, [Litestar](https://github.com/litestar-org/) - Asynchronous Python Framework for building APIs and Web Apps, 2023 - Present
   - Contribute to the codebase for Litestar, ensuring its performance and capabilities
   - Managed complex CI pipelines, including testing, linting, and deployment
   - Collaborate on project roadmap and features, and maintain related projects like Polyfactory
@@ -56,7 +56,7 @@ Open Source
   - Maintained priorities and relationships with user and business sponsors
   - Managed the project's community, including contributors, users, and sponsors
 
-* Maintainer | Powerful utilities for Python - 2023 - Present @ Jolt Organization
+* Maintainer, Jolt Organization - Powerful utilities for Python, 2023 - Present
   - Split off popular internals from the Litestar organization projects to provide them en masse
   - Maintained projects including a [SQLAlchemy companion library](https://github.com/jolt-org/advanced-alchemy), Python runtime type introspection utility library, and more
 
