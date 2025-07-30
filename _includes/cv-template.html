@@ -187,7 +187,7 @@
           <div class="cv-item-detail">{{ talk.location }}</div>
           {% endif %}
           {% if talk.description %}
-          <div class="cv-item-detail">{{ talk.description }}</div>
+          <div class="cv-item-detail">{{ talk.description | markdownify }}</div>
           {% endif %}
         </div>
       </li>
@@ -213,7 +213,7 @@
           <div class="cv-item-detail">Role: {{ teaching.role }}</div>
           {% endif %}
           {% if teaching.description %}
-          <div class="cv-item-detail">{{ teaching.description }}</div>
+          <div class="cv-item-detail">{{ teaching.description | markdownify }}</div>
           {% endif %}
         </div>
       </li>
@@ -236,7 +236,7 @@
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ item.category | capitalize }}</div>
           {% if item.description %}
-          <div class="cv-item-detail">{{ item.description }}</div>
+          <div class="cv-item-detail">{{ item.description | markdownify }}</div>
           {% endif %}
           {% if item.url and item.url != "" %}
           <div class="cv-item-detail">
