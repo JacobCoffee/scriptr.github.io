@@ -38,7 +38,13 @@
     <div class="cv-profiles">
       {% for profile in cv.basics.profiles %}
       <a href="{{ profile.url }}" target="_blank" class="cv-profile-link">
+        {% if profile.network == "X" %}
+        <i class="fab fa-x-twitter"></i> {{ profile.network }}
+        {% elsif profile.network == "Bluesky" %}
+        <i class="fab fa-bluesky"></i> {{ profile.network }}
+        {% else %}
         <i class="fab fa-{{ profile.network | downcase }}"></i> {{ profile.network }}
+        {% endif %}
       </a>
       {% endfor %}
     </div>
