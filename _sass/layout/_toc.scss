@@ -67,7 +67,7 @@ details#toc-details {
     font-weight: bold;
     font-size: $type-size-6;
     margin-bottom: 0.5rem;
-    
+
     &:hover {
       color: var(--global-link-color);
     }
@@ -83,7 +83,7 @@ details#toc-details {
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-6;
+  font-size: $type-size-4;
 
   li {
     padding: 0;
