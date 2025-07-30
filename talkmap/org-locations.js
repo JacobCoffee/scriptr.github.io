@@ -1,22 +1,22 @@
 var addressPoints = [
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.4893335,
-    -0.14405508452768728
+    "Behind the Scenes: PSF Infrastructure and How You Can Contribute<br />EuroPython 2025; Prague, Czech Republic",
+    50.0874654,
+    14.4212535
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "One Year In: Insights and Inspiration from my PSF Journey - Part Two<br />PyCon US 2025; Pittsburgh, Pennsylvania",
+    40.4416941,
+    -79.9900861
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "One Year In: Insights and Inspiration from My PSF Journey<br />PyTexas 2025; Austin, Texas",
+    30.2711286,
+    -97.7436995
   ],
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7792588,
-    -122.4193286
+    "Litestar: Effortlessly Build Performant APIs<br />Talk Python To Me; Online",
+    43.5904719,
+    3.8595132
   ]
 ];
