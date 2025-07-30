@@ -285,11 +285,6 @@ whitelist:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-# `jekyll serve -l -H localhost`. If you change this file, please restart the
-# server process.
-# Basic Site Settings
-site_theme               : "default"
-talkmap_link             : false      #change to true to add link to talkmap on talks page
   - jemoji
 
 
