@@ -92,32 +92,13 @@ Education
 
 [//]: # (* IEEE & ACM Student Member)
 
-[//]: # ()
-[//]: # (Publications)
+====
 
-[//]: # (============)
+Talks
 
-[//]: # ()
-[//]: # (Coming Soon)
+=====
 
 [//]: # ()
-[//]: # (<ul>{% for post in site.publications %})
-
-[//]: # (    {% include archive-single-cv.html %})
-
-[//]: # (  {% endfor %}</ul>)
-
-[//]: # ()
-[//]: # (Talks)
-
-[//]: # (=====)
-
-[//]: # ()
-[//]: # (Coming Soon)
-
-[//]: # ()
-[//]: # (<ul>{% for post in site.talks %})
-
-[//]: # (    {% include archive-single-talk-cv.html %})
-
-[//]: # (  {% endfor %}</ul>)
+<ul>{% for post in site.talks %}
+    {% include archive-single-talk-cv.html %}
+  {% endfor %}</ul>
