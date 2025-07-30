@@ -185,5 +185,41 @@
     }
   ],
   "teaching": [],
-  "portfolio": []
+  "portfolio": [
+    {
+      "name": "Internal Apps",
+      "category": "project",
+      "date": "2022 \u2013 Present",
+      "url": "",
+      "description": "Highly-available APIs for 1000+ users. Architected and deployed a highly available internal store API and corresponding frontend Developed ChatOps interfaces and automation to reduce user friction Deployed load balancing and versioned multi-container deployments for application resiliency"
+    },
+    {
+      "name": "Homelab",
+      "category": "project",
+      "date": "May 2018 \u2013 Present",
+      "url": "",
+      "description": "vSphere, Active Directory, Linux, Docker, Azure. Engineered systems around hardware constraints in an 8 node cluster Implemented Docker containerization with source-controlled configuration deployed with GitOps Built complex networks with VLANs for service segmentation, multi-user VPN, and IDS/IPS services"
+    },
+    {
+      "name": "Order Management System",
+      "category": "project",
+      "date": "Jan 2022 \u2013 Feb 2022",
+      "url": "",
+      "description": "Web app for pathologists' test ordering. Deployed a multi-environment Flask web app with Docker, LDAP, OAuth authentication, and tiered permissions Engineered scalable deployment with NGINX, Gunicorn, and Docker Developing a reporting dashboard for national teams"
+    },
+    {
+      "name": "Litestar",
+      "category": "opensource",
+      "date": "Maintainer - Asynchronous Python Framework for building APIs and Web Apps",
+      "url": "https://github.com/litestar-org/",
+      "description": ". Contribute to the codebase for Litestar, ensuring its performance and capabilities Managed complex CI pipelines, including testing, linting, and deployment Collaborate on project roadmap and features, and maintain related projects like Polyfactory Provide assistance and guidance within the project's community Steered Litestar organization projects, roadmap, and vision Maintained priorities and relationships with user and business sponsors Managed the project's community, including contributors, users, and sponsors"
+    },
+    {
+      "name": "Maintainer",
+      "category": "opensource",
+      "date": "",
+      "url": "",
+      "description": "Powerful utilities for Python - 2023 - Present @ Jolt Organization. Split off popular internals from the Litestar organization projects to provide them en masse Maintained projects including a [SQLAlchemy companion library](https://github.com/jolt-org/advanced-alchemy), Python runtime type introspection utility library, and more"
+    }
+  ]
 }

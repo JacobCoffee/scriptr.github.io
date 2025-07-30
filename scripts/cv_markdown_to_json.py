@@ -364,6 +364,86 @@ def parse_portfolio(portfolio_dir):
     
     return portfolio
 
+def parse_portfolio_from_cv(portfolio_text, opensource_text):
+    """Parse portfolio items from CV markdown sections."""
+    portfolio_entries = []
+    
+    # Parse portfolio/projects section
+    if portfolio_text:
+        entries = re.findall(r'\* (.*?)(?=\n\*|\Z)', portfolio_text, re.DOTALL)
+        for entry in entries:
+            lines = entry.strip().split('\n')
+            if not lines:
+                continue
+            
+            # Parse project name and description from first line
+            first_line = lines[0].strip()
+            # Format: Project Name | Short description | Date
+            parts = first_line.split('|')
+            if len(parts) >= 2:
+                name = parts[0].strip()
+                description = parts[1].strip()
+                date = parts[2].strip() if len(parts) > 2 else ""
+                
+                # Extract details from bullet points
+                details = []
+                for line in lines[1:]:
+                    if line.strip().startswith('-'):
+                        details.append(line.strip()[1:].strip())
+                
+                portfolio_entries.append({
+                    "name": name,
+                    "category": "project",
+                    "date": date,
+                    "url": "",
+                    "description": description + ". " + " ".join(details) if details else description
+                })
+    
+    # Parse open source section
+    if opensource_text:
+        entries = re.findall(r'\* (.*?)(?=\n\*|\Z)', opensource_text, re.DOTALL)
+        for entry in entries:
+            lines = entry.strip().split('\n')
+            if not lines:
+                continue
+            
+            # Parse first line
+            first_line = lines[0].strip()
+            # Extract URL if present
+            url_match = re.search(r'\[(.*?)\]\((.*?)\)', first_line)
+            if url_match:
+                name = url_match.group(1)
+                url = url_match.group(2)
+                # Get the rest of the line after the URL
+                rest = first_line[url_match.end():].strip()
+            else:
+                # No URL found, parse normally
+                parts = first_line.split('|')
+                name = parts[0].strip()
+                rest = '|'.join(parts[1:]) if len(parts) > 1 else ""
+                url = ""
+            
+            # Extract description and date
+            parts = rest.split('|')
+            description = parts[0].strip() if parts else ""
+            date = parts[1].strip() if len(parts) > 1 else ""
+            
+            # Extract details from bullet points
+            details = []
+            for line in lines[1:]:
+                if line.strip().startswith('-'):
+                    details.append(line.strip()[1:].strip())
+            
+            portfolio_entries.append({
+                "name": name,
+                "category": "opensource",
+                "date": date,
+                "url": url,
+                "description": description + ". " + " ".join(details) if details else description
+            })
+    
+    return portfolio_entries
+
 def create_cv_json(md_file, config_file, repo_root, output_file):
     """Create a JSON CV from markdown and other repository data."""
     # Parse the markdown CV
@@ -395,8 +475,13 @@ def create_cv_json(md_file, config_file, repo_root, output_file):
     # Add teaching
     cv_json["teaching"] = parse_teaching(os.path.join(repo_root, "_teaching"))
     
-    # Add portfolio
-    cv_json["portfolio"] = parse_portfolio(os.path.join(repo_root, "_portfolio"))
+    # Add portfolio from _portfolio directory and CV sections
+    portfolio_from_dir = parse_portfolio(os.path.join(repo_root, "_portfolio"))
+    portfolio_from_cv = parse_portfolio_from_cv(
+        sections.get('Projects', ''),
+        sections.get('Open Source', '')
+    )
+    cv_json["portfolio"] = portfolio_from_dir + portfolio_from_cv
     
     # Extract languages and interests from config if available
     if 'languages' in config:
