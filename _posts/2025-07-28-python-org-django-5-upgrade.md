@@ -1,6 +1,8 @@
 ---
 title: 'Upgrading Python.org: From Django 4.2 to 5.2'
 date: 2025-07-28
+header:
+  teaser: "unsplash-gallery-image-2-th.jpg"
 permalink: /posts/2025/07/python-org-django-5-upgrade/
 tags:
   - django
@@ -12,6 +14,8 @@ tags:
 
 After months of waiting and plotting, [I've](https://github.com/JacobCoffee/) successfully upgraded Python.org from 
 Django 4.2 to Django 5.2 almost a year after the upgrade from Django 2.2 to 4.2!
+
+> [View the pull request here](github.com/python/pythondotorg/pull/2741)
 
 You can check out the [release notes for Django 5.0][django-5.0-release-notes], [Django 5.2][django-5.2-release-notes],
 and a [great video from JetBrains][whats-news-in-django-5] that covers the major changes in Django 5.x.
