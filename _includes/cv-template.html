@@ -238,7 +238,7 @@
           {% if item.description %}
           <div class="cv-item-detail">{{ item.description }}</div>
           {% endif %}
-          {% if item.url %}
+          {% if item.url and item.url != "" %}
           <div class="cv-item-detail">
             <a href="{{ item.url }}" target="_blank">View Project</a>
           </div>
