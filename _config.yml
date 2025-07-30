@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Scriptr"
 title_separator          : "|"
 name                     : &name "Jacob Coffee"
-description              : &description "Student of Computer Science specializing Artificial Intelligence, and Cloud Computing"
+description              : &description "Infrastructure Engineer at the Python Software Foundation, maintaining critical Python ecosystem services"
 url                      : https://scriptr.dev # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "JacobCoffee/scriptr.github.io"
@@ -88,7 +88,7 @@ analytics:
 author:
   name             : "Jacob Coffee"
   avatar           : "profile.png"
-  bio              : "Student of Computer Science specializing Artificial Intelligence, and Cloud Computing"
+  bio              : "Infrastructure Engineer at the Python Software Foundation, maintaining critical Python ecosystem services"
   location         : "Birmingham, AL"
   employer         :
   pubmed           :
