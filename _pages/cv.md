@@ -56,7 +56,7 @@ Open Source
   - Maintained priorities and relationships with user and business sponsors
   - Managed the project's community, including contributors, users, and sponsors
 
-* Maintainer, Jolt Organization - Powerful utilities for Python, 2023 - Present
+* Maintainer, [Jolt Organization](https://github.com/jolt-org) - Powerful utilities for Python, 2023 - Present
   - Split off popular internals from the Litestar organization projects to provide them en masse
   - Maintained projects including a [SQLAlchemy companion library](https://github.com/jolt-org/advanced-alchemy), Python runtime type introspection utility library, and more
 

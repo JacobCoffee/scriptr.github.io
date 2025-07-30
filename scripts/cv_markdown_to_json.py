@@ -306,7 +306,8 @@ def parse_talks(talks_dir):
                 "event": front_matter.get('venue', ''),
                 "date": front_matter.get('date', ''),
                 "location": front_matter.get('location', ''),
-                "description": front_matter.get('excerpt', '')
+                "description": front_matter.get('excerpt', ''),
+                "url": front_matter.get('permalink', '')
             }
             
             talks.append(talk_entry)

@@ -166,7 +166,13 @@
       {% for talk in cv.presentations %}
       <li class="cv-item">
         <div class="cv-item-header">
-          <div class="cv-item-title">{{ talk.name }}</div>
+          <div class="cv-item-title">
+            {% if talk.url %}
+            <a href="{{ talk.url }}">{{ talk.name }}</a>
+            {% else %}
+            {{ talk.name }}
+            {% endif %}
+          </div>
           <div class="cv-item-date">{{ talk.date | slice: 0, 4 }}</div>
         </div>
         <div class="cv-item-content">

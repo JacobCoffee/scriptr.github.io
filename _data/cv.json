@@ -165,28 +165,32 @@
       "event": "Talk Python To Me",
       "date": "2023-08-30",
       "location": "Online",
-      "description": ""
+      "description": "",
+      "url": "/talks/2023-08-30-talk-python-litestar"
     },
     {
       "name": "One Year In: Insights and Inspiration from My PSF Journey",
       "event": "PyTexas 2025",
       "date": "2025-04-13",
       "location": "Austin, Texas",
-      "description": ""
+      "description": "",
+      "url": "/talks/2025-04-13-pytexas-psf-journey"
     },
     {
       "name": "One Year In: Insights and Inspiration from my PSF Journey - Part Two",
       "event": "PyCon US 2025",
       "date": "2025-05-18",
       "location": "Pittsburgh, Pennsylvania",
-      "description": ""
+      "description": "",
+      "url": "/talks/2025-05-18-pycon-us-psf-infrastructure"
     },
     {
       "name": "Behind the Scenes: PSF Infrastructure and How You Can Contribute",
       "event": "EuroPython 2025",
       "date": "2025-07-17",
       "location": "Prague, Czech Republic",
-      "description": ""
+      "description": "",
+      "url": "/talks/2025-07-17-europython-psf-infrastructure"
     }
   ],
   "teaching": [],
@@ -223,7 +227,7 @@
       "name": "Jolt Organization",
       "category": "opensource",
       "date": "2023 - Present",
-      "url": "",
+      "url": "https://github.com/jolt-org",
       "description": "Maintainer - Powerful utilities for Python. Split off popular internals from the Litestar organization projects to provide them en masse Maintained projects including a [SQLAlchemy companion library](https://github.com/jolt-org/advanced-alchemy), Python runtime type introspection utility library, and more"
     }
   ]
