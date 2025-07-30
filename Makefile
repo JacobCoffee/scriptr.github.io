@@ -6,10 +6,12 @@ help: ## Show this help message
 	@echo 'Targets:'
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-setup: ## setup things for cv json genny
+setup: ## setup things for cv json genny,
 	@echo "setting up env"
 	@uv venv --python 3.13 --seed
 	@uv pip install pyyaml
+	@gem install bundler:1.17.2
+	@bundle install
 
 cv-json: ## Update CV JSON from markdown CV
 	@echo "Converting CV markdown to JSON..."
