@@ -8,9 +8,8 @@
   <nav class="toc">
     <header>
       <h4 class="nav__title"><i class="fas fa-{{ include.icon | default: 'file-alt' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label | default: "On This Page" }}</h4>
-      <p class="page__meta"><i class="fas fa-file-word"></i> <span id="word-count"></span> words</p>
     </header>
-    <details id="toc-details">
+    <details id="toc-details" open>
       <summary>Table of Contents</summary>
       <ul class="toc__menu" id="markdown-toc">
         <!-- TOC will be generated here by JavaScript -->
@@ -21,14 +20,6 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Word count
-  const content = document.querySelector('.page__content');
-  if (content) {
-    const text = content.innerText || content.textContent;
-    const wordCount = text.trim().split(/\s+/).length;
-    document.getElementById('word-count').textContent = wordCount.toLocaleString();
-  }
-  
   // Generate table of contents
   const tocContainer = document.getElementById('markdown-toc');
   const headings = document.querySelectorAll('.page__content h2, .page__content h3, .page__content h4');
