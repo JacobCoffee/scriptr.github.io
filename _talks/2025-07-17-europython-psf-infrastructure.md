@@ -17,4 +17,4 @@ Exploring the technical infrastructure that powers the Python ecosystem and the 
 
 [Conference Session](https://ep2025.europython.eu/session/behind-the-scenes-psf-infrastructure-and-how-you-can-contribute)
 
-[Watch on YouTube](https://www.youtube.com/live/WGhpi5EYBuI?si=SlgJEh-NgVy2sGbO&t=23085)
+[Watch on YouTube](https://www.youtube.com/watch?v=H2UrdiI7xZ4)
